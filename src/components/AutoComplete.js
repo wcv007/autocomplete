@@ -18,7 +18,6 @@ class AutoComplete extends Component {
     };
     this.changeText = this.changeText.bind(this);
     this.getData = this.getData.bind(this);
-    this.onMovieResultClicked = this.onMovieResultClicked.bind(this);
     this.clickMovie = this.clickMovie.bind(this);
     this.removeMovie = this.removeMovie.bind(this);
     this.clickOutside = this.clickOutside.bind(this);
@@ -75,8 +74,6 @@ class AutoComplete extends Component {
       );
     }
   }
-
-  onMovieResultClicked(e) {}
 
   removeMovie(val) {
     let newState = this.state.selectedMovieList.slice();
@@ -137,7 +134,6 @@ class AutoComplete extends Component {
               <div
                 className="dropDownContainer"
                 ref={(node) => (this.moviesSearchRef = node)}
-                onClick={this.onMovieResultClicked}
               >
                 {data.map((res) => {
                   return (
