@@ -1,4 +1,3 @@
-AutoCompletor
 Steps to run the project
 Steps to run:
 
