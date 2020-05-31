@@ -1,3 +1,6 @@
+body {
+  overflow: hidden;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,145 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.autoCompleteDiv {
+  left: 35%;
+  display: inline-block;
+  position: fixed;
+  top: 215px;
+  border: 2px solid silver;
+  border-radius: 25px;
+  width: 530px;
+}
+
+.autoCompleteInput {
+  border-radius: 25px;
+  height: 24px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 4px;
+  float: left;
+  width: 120px;
+  /* width: 260px; */
+}
+
+.dropDownContainer {
+  width: 360px;
+  display: inline-block;
+  top: 250px;
+  left: calc(35% + 5px);
+  position: fixed;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.searchRow {
+  padding: 2px 2px 2px 8px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  text-align: left;
+}
+.searchRow:hover {
+  background-color: #bedeeb;
+}
+
+.separator {
+  height: 0.5px;
+  background-color: #ccc;
+}
+
+.parentDiv {
+  width: 100%;
+  height: 1000px;
+}
+
+.movieP1 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  height: 14px;
+  padding: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movieP2 {
+  margin: 0;
+  font-size: 10px;
+  height: 14px;
+  padding: 2px;
+}
+
+.movieList {
+  background: #e4e4e4;
+  font-size: 12px;
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 24px;
+  margin-left: 6px;
+  border-radius: 50px;
+}
+
+.movieText {
+  padding: 0px 0px 0px 4px;
+  width: 52px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .movieText:hover {
+  text-overflow: clip;
+  white-space: normal;
+  word-break: break-all;
+} */
+
+.movieCross {
+  padding: 0px 8px 0px 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.warning {
+  color: red;
+  font-size: 14px;
+  position: fixed;
+  top: 195px;
+  left: 36%;
+}
+
+.movieSpan {
+  float: left;
+  padding-top: 3px;
+}
+
+.tooltipSpan {
+  visibility: hidden;
+  max-width: 180px;
+  padding: 0px 5px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  margin-left: -50px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltipSpan:hover {
+  visibility: visible;
+  opacity: 1;
 }
